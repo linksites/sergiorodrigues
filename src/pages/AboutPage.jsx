@@ -15,6 +15,8 @@ const specifications = [
 ];
 
 export default function AboutPage() {
+  const profileImage = `${import.meta.env.BASE_URL}assets/perfil-sergio-rodrigues.jpg`;
+
   return (
     <section className="mx-auto w-[min(1120px,92vw)] py-14 md:py-20">
       <div className="mb-8 reveal">
@@ -26,7 +28,7 @@ export default function AboutPage() {
         <article className="gold-outline reveal rounded-2xl p-7">
           <figure className="overflow-hidden rounded-xl border border-gold-600/40 bg-black/40">
             <img
-              src="/assets/perfil-sergio-rodrigues.jpg"
+              src={profileImage}
               alt="Sérgio Rodrigues"
               className="h-[380px] w-full object-cover object-top"
             />

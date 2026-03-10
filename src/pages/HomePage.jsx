@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { differentials, office } from "../content/office";
 
 export default function HomePage() {
+  const logo = `${import.meta.env.BASE_URL}assets/logo.png`;
+
   return (
     <section className="mx-auto w-[min(1120px,92vw)] py-16 md:py-24">
       <div className="grid items-center gap-8 md:grid-cols-[1.2fr_.8fr]">
@@ -27,7 +29,7 @@ export default function HomePage() {
 
         <aside className="gold-outline reveal rounded-2xl p-6 [animation-delay:120ms]">
           <img
-            src="/assets/logo.png"
+            src={logo}
             alt="Emblema SR Advocacia"
             className="mx-auto mb-5 h-28 w-28 rounded-xl border border-gold-600/35 object-cover"
           />

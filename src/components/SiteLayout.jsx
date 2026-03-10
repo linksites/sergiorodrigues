@@ -11,6 +11,7 @@ const navItems = [
 
 export default function SiteLayout() {
   const [isOpen, setIsOpen] = useState(false);
+  const logoCircle = `${import.meta.env.BASE_URL}assets/logonovacirculo.jpeg`;
 
   return (
     <div className="min-h-screen bg-obsidian text-stone-100">
@@ -18,7 +19,7 @@ export default function SiteLayout() {
         <div className="mx-auto flex w-[min(1120px,92vw)] items-center justify-between py-4">
           <NavLink to="/" className="flex items-center gap-3" onClick={() => setIsOpen(false)}>
             <img
-              src="/assets/logonovacirculo.jpeg"
+              src={logoCircle}
               alt="Logo Sérgio Rodrigues Advocacia Criminal"
               className="h-11 w-11 rounded-full border border-gold-600/50 object-cover"
             />
@@ -82,7 +83,7 @@ export default function SiteLayout() {
         <div className="mx-auto flex w-[min(1120px,92vw)] flex-wrap items-center justify-between gap-4 text-sm text-stone-400">
           <div className="flex items-center gap-3">
             <img
-              src="/assets/logonovacirculo.jpeg"
+              src={logoCircle}
               alt="Sérgio Rodrigues Advocacia Criminal"
               className="h-9 w-9 rounded-full border border-gold-600/40 object-cover"
             />
